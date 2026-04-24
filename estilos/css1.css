@@ -1,22 +1,25 @@
 h2{
     color: #f8f9fa;
-    font-size: 30px ;
+    font-size: 32px ;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-left: 15px;
     padding-top: 20px;
+    text-align: center;
 }
 h1{
     color: #f8f9fa;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
         font-size: 40px ;
 }
 
 h3{
-    color: #cdebff;
+    color: #f8f9fa;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-left: 15px;
     padding-top: 20px;
-    font-size: 25px ;
+    font-size: 23px ;
+    text-align: center;
 }
 
 p{
@@ -25,6 +28,7 @@ p{
     padding-left: 15px;
     padding-bottom: 15px;
     font-size: 20px ;
+    text-align: center;
 }
 
 
@@ -67,6 +71,7 @@ body{
 header{
     background-color: #14213d;
     border: 5px solid #b25800;
+    /*position: fixed;*/
 
 }
 footer{
@@ -95,9 +100,8 @@ img{
     display: flex;
     justify-content: center;
     list-style: none;
-    background-color: #060e21;
-    padding: 15px 0;
-    margin: 0;
+    /*padding: 15px 0;
+    margin: 0;*/
 }
 .menu-navegacion a {
     color: rgb(255, 255, 255);
@@ -124,4 +128,39 @@ img{
     margin-right: auto;
     max-width: 95%;
     height: auto;
+}
+
+.Apasiona{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+/*.principioindex{
+    padding-top: 210px;
+}*/
+
+.header-principal {
+    display: flex;
+    justify-content: space-between; /* Empuja el logo a la izquierda y el menú a la derecha */
+    align-items: center;           /* Centra todo verticalmente */
+    background-color: #14213d;     /* El azul de la imagen de ejemplo */
+    padding: 10px 50px;            /* Espacio interno para que no toque los bordes */
+    color: white;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;           /* Alinea el icono con el texto */
+    gap: 15px;                     /* Espacio entre el icono y el nombre */
+}
+
+.icono-header {
+    width: 90px;                   /* Ajustá el tamaño de tu icono */
+    height: auto;
+}
+
+@media (max-width: 500px) {
+    .menu-navegacion ul{
+        flex-direction: column;
+    }
 }
