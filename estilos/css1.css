@@ -165,9 +165,14 @@ label {
   }
 
 @media all and (max-width: 840px) { 
-  
+    
+    .menu-navegacion {
+        position: relative; 
+    }
+
     input:checked  ~ ul{   
     display:block;
+    
       }
   
       input:checked ~ label {   
@@ -200,11 +205,24 @@ label {
   
     .menu-navegacion ul
     {                         
-       display: none;
-       background-color:#016195;
-       flex-direction: column;
+        display: none;
+        position: absolute;
+        right: 0; 
+        top: 40px; 
+        background-color: #003f7e;
+        width: 200px;      
+        text-align: center;
+        z-index: 1000;
+        padding: 10px;
+        border-radius: 5px;
     }
     
+    .menu-navegacion ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+
     h1{ 
         font-size: 23px;
       }
